@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Baking Blog</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            position: relative;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        header div {
+            position: relative;
+            z-index: 2;
+        }
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+        }
+        header a {
+            background-color: #ff6600;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #ffcc99;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 4rem; /* To ensure content isn't hidden behind fixed nav */
+        }
+        .post {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+        .post p {
+            font-size: 1rem;
+        }
+        #about {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #ffcc99;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#posts">Recipes</a>
+        <a href="#about">About the Project</a>
+    </nav>
+    <header>
+        <video autoplay muted loop>
+            <source src="bread.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div>
+            <h1>Welcome to My Baking Blog</h1>
+            <p>Discover delicious recipes and baking tips!</p>
+            <a href="#about">Get Started</a>
+        </div>
+    </header>
+    <main id="home">
+        <section id="posts">
+            <div class="post">
+                <h2>Delicious Three-Tiered Pastries</h2>
+                <img src="three_tiered.jpg" alt="Three-Tiered Pastries">
+                <p>Discover the art of baking with our step-by-step guide to creating these beautiful three-tiered pastries. Perfect for any occasion, these treats are sure to impress your guests!</p>
+                <h3>Recipe:</h3>
+                <ul>
+                    <li>1. Preheat your oven to 375°F (190°C).</li>
+                    <li>2. Prepare the dough and roll it out.</li>
+                    <li>3. Cut the dough into desired shapes and sizes.</li>
+                    <li>4. Layer pastries on the tiered stand.</li>
+                    <li>5. Brush with egg wash for a golden finish.</li>
+                    <li>6. Bake for 15-20 minutes or until golden brown.</li>
+                    <li>7. Let them cool and dust with powdered sugar.</li>
+                </ul>
+            </div>
+            <div class="post">
+                <h2>Classic Croissants</h2>
+                <img src="croissants.jpg" alt="Classic Croissants">
+                <p>Learn how to make classic, buttery croissants with our detailed recipe. Perfect for breakfast or a snack, these croissants are flaky and delicious.</p>
+                <h3>Recipe:</h3>
+                <ul>
+                    <li>1. Mix flour, sugar, salt, and yeast in a bowl.</li>
+                    <li>2. Add butter and milk, and knead the dough.</li>
+                    <li>3. Let the dough rise for 1 hour.</li>
+                    <li>4. Roll out the dough and fold it several times to create layers.</li>
+                    <li>5. Cut the dough into triangles and roll into croissant shapes.</li>
+                    <li>6. Let the croissants rise for another 1 hour.</li>
+                    <li>7. Preheat the oven to 375°F (190°C) and bake for 20-25 minutes.</li>
+                </ul>
+            </div>
+            <div class="post">
+                <h2>Chocolate Eclairs</h2>
+                <img src="eclairs.jpg" alt="Chocolate Eclairs">
+                <p>Indulge in these rich and creamy chocolate eclairs. Our recipe guides you through the process of making these decadent pastries from scratch.</p>
+                <h3>Recipe:</h3>
+                <ul>
+                    <li>1. Preheat your oven to 400°F (200°C).</li>
+                    <li>2. Prepare the choux pastry dough and pipe into eclair shapes.</li>
+                    <li>3. Bake for 15-20 minutes or until puffed and golden.</li>
+                    <li>4. Prepare the cream filling and chocolate glaze.</li>
+                    <li>5. Once eclairs are cool, fill them with cream and dip in chocolate glaze.</li>
+                    <li>6. Refrigerate until the glaze is set.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About My Baking Blog Project</h2>
+            <p>This blog is a labor of love, created to share my passion for baking with the world. Here, you'll find a collection of my favorite recipes, baking tips, and kitchen adventures. Whether you're a seasoned baker or just starting out, I hope you find inspiration and joy in these pages.</p>
+
+            <h2>Project Goals</h2>
+            <p>The main goals of this project are:</p>
+            <ul>
+                <li>To document and share my baking experiences and recipes.</li>
+                <li>To create a community of baking enthusiasts who can share tips, tricks, and support.</li>
+                <li>To explore and experiment with new recipes and baking techniques.</li>
+            </ul>
+
+            <h2>What You'll Find Here</h2>
+            <p>On this blog, you can expect to find:</p>
+            <ul>
+                <li>Detailed recipes for a variety of baked goods, from classic croissants to decadent chocolate eclairs.</li>
+                <li>Step-by-step guides with photos to help you follow along easily.</li>
+                <li>Tips and tricks for perfecting your baking skills.</li>
+                <li>Stories and anecdotes from my baking adventures.</li>
+            </ul>
+
+            <h2>Join the Community</h2>
+            <p>I invite you to join me on this baking journey. Feel free to leave comments, share your own baking experiences, and connect with other baking enthusiasts. Let's create a warm and welcoming community where we can all learn and grow together.</p>
+
+            <h2>Contact Me</h2>
+            <p>If you have any questions, suggestions, or just want to say hello, you can reach me at <a href="mailto:your_email@example.com">your_email@example.com</a>. I'd love to hear from you!</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 My Baking Blog
+    </footer>
+</body>
+</html>
